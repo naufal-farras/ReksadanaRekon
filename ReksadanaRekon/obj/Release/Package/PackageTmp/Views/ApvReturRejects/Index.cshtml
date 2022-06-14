@@ -1,0 +1,517 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="well">
+    <h4 class="text-center col-sm-12"><b>List Approval Reject Data Aplikasi</b></h4>
+    <table id="table" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Tgl. Upload</th>
+                <th>Tgl. Match</th>
+                <th>Tgl. Transaksi</th>
+                <th>SA</th>
+                <th>Fund</th>
+                <th>MI</th>
+                <th>Nama Investor</th>
+                <th>Nominal</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title text-center" id="myModalLabel">View Detail</h4>
+            </div>
+            <div class="modal-body">
+                <fieldset>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Tanggal Match</label>
+                            <div class="col-lg-4">
+                                <input type="text" disabled class="form-control" id="tanggalMatch">
+                            </div>
+                            <label class="col-lg-2 control-label">User Match</label>
+                            <div class="col-lg-4">
+                                <input type="text" disabled class="form-control" id="UserMatch">
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Keterangan</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" disabled rows="2" id="keteranganUser"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <hr />
+                <h4 class="text-center">Data Retur</h4>
+                <table id="tabelDetApp" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal Upload</th>
+                            <th>Tanggal Transaksi</th>
+                            <th>SA</th>
+                            <th>Fund</th>
+                            <th>MI</th>
+                            <th>Nama Investor</th>
+                            <th>Nominal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyapp"></tbody>
+                </table>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-lg-offset-6 col-lg-2 control-label">Total Dana Retur</label>
+                        <div class="col-lg-4">
+                            <input type="text" disabled class="form-control text-right" id="totalApp">
+                        </div>
+                    </div>
+                </fieldset>
+                <hr />
+                <h4 class="text-center">Data Fund</h4>
+                <table id="tabelDetFund" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal Upload</th>
+                            <th>Tanggal Transaksi</th>
+                            <th>No Rekening</th>
+                            <th>Nama Rekening</th>
+                            <th>Mata Uang</th>
+                            <th>Keterangan</th>
+                            <th>Jumlah</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyfund"></tbody>
+                </table>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-lg-offset-6 col-lg-2 control-label">Total Dana Fund</label>
+                        <div class="col-lg-4">
+                            <input type="text" disabled class="form-control text-right" id="totalFund">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li id="message"></li>
+            </ul>
+            <div class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <label class="col-lg-4 control-label">Total Data</label>
+                    <div class="col-lg-8">
+                        <input type="text" readonly class="form-control text-right" id="totalData" value="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4 control-label">Total Amount</label>
+                    <div class="col-lg-8">
+                        <input type="text" readonly class="form-control text-right" id="totalAmount" value="0">
+                    </div>
+                </div>
+                <button id="ApproveApp" class="btn btn-success">Approve</button>
+                <button id="RejectApp" class="btn btn-danger">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+<link href="~/Content/sweetalert/sweetalert.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+<script src="~/Content/sweetalert/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        //jQuery DataTables initialization
+        var table = $('#table').DataTable({
+            "processing": true, // for show processing bar
+            "serverSide": true, // for process on server side
+            "orderMulti": false, // for disable multi column order
+            "lengthMenu": [[10, 25, 50, 100, 200], [10, 25, 50, 100, 200]],
+            "pageLength": 200,
+            "scrollX": true,
+            //"stateSave": true, // remain unchange after resfresh browser
+            "ajax": {
+                "url": "@Url.Action("GetList", "ApvReturRejects")",
+                "type": "POST",
+                "datatype": "json"
+            },
+            "columns": [
+                    { "data": "TransaksiId", "name": "TransaksiId", "autoWidth": true }, //index 0
+                    { "data": "TanggalUpload", "name": "TanggalUpload", "autoWidth": true, "render": function (d) { return moment(d).format('DD/MM/YY') } }, //index 1
+                    { "data": "TanggalMatch", "name": "TanggalMatch", "autoWidth": true, "render": function (d) { return moment(d).format('DD/MM/YY') } },             //index 2
+                    { "data": "TanggalTransaksi", "name": "TanggalTransaksi", "autoWidth": true, "render": function (d) { return moment(d).format('DD/MM/YY') } },         //index 3
+                    { "data": "SA", "name": "SA", "autoWidth": true },               //index 4
+                    {
+                        "data": "Fund", "name": "Fund", "autoWidth": true,
+                        "render": function (d) {
+                            return d.substr(11, d.length)
+                        }
+                    },   //index 5
+                    { "data": "MI", "name": "MI", "autoWidth": true },   //index 6
+                    { "data": "InvestorFundUnitName", "name": "InvestorFundUnitName", "autoWidth": true },   //index 8
+                    { "data": "AmountNominal", "name": "AmountNominal", "autoWidth": true, "render": $.fn.dataTable.render.number('.', '', 0, '') },   //index 9
+                    {
+                        "data": "MatchingNama", "name": "MatchingNama", "autoWidth": true,
+                        "render": function (data, type, row) {
+                            return "<span class='label label-xs label-" + row.MatchingWarna + "'>" + row.MatchingNama + "</span>"
+                        }
+                    },   //index 10
+                    {
+                        "autoWidth": true,
+                        "render": function (data, type, row) {
+                            return "<button class='btn btn-info btn-xs' onclick='GetById(" + row.TransaksiId + ")'>View</button>"
+                        }
+                    }
+            ],
+            'columnDefs': [
+              {
+                  'targets': 0,
+                  'checkboxes': {
+                      'selectRow': true
+                  }
+              },
+              {
+                  'targets': 4,
+                  'render': $.fn.dataTable.render.ellipsis(15)
+              }
+            ]
+        });
+
+        $('#table tbody').on('click', '.dt-checkboxes', function () {
+            var amount = table.row(this.closest('tr')).data().AmountNominal;
+            var totaldata = minkoma($('#totalData').val());
+            var totalamount = minkoma($('#totalAmount').val());
+            var newapp = 0;
+            var newamount = 0;
+
+            if (this.checked == true) {
+                newapp = parseInt(totaldata) + 1;
+                newamount = parseInt(totalamount) + parseInt(amount);
+            } else {
+                newapp = parseInt(totaldata) - 1;
+                newamount = parseInt(totalamount) - parseInt(amount);
+            }
+            $('#totalData').val(pluskoma(newapp));
+            $('#totalAmount').val(pluskoma(newamount));
+        });
+
+        $('.dt-checkboxes-select-all input[type="checkbox"]').on('click', function () {
+            var all = this.checked;
+            if (this.checked) {
+                $('.dt-checkboxes').each(function () {
+                    var item = this.checked;
+                    if (all != item) {
+                        this.checked = true;
+                        var id = $(this).attr('data');
+                        var amount = table.row(this.closest('tr')).data().AmountNominal;
+                        var totaldata = minkoma($('#totalData').val());
+                        var totalamount = minkoma($('#totalAmount').val());
+                        var newapp = parseInt(totaldata) + 1;
+                        var newamount = parseInt(totalamount) + parseInt(amount);
+                        $('#totalData').val(pluskoma(newapp));
+                        $('#totalAmount').val(pluskoma(newamount));
+                    }
+                });
+            } else {
+                $('.dt-checkboxes').each(function () {
+                    var item = this.checked;
+                    if (all != item) {
+                        this.checked = false;
+                        var id = $(this).attr('data');
+                        var amount = table.row(this.closest('tr')).data().AmountNominal;
+                        var totaldata = minkoma($('#totalData').val());
+                        var totalamount = minkoma($('#totalAmount').val());
+                        var newapp = parseInt(totaldata) - 1;
+                        var newamount = parseInt(totalamount) - parseInt(amount);
+                        $('#totalData').val(pluskoma(newapp));
+                        $('#totalAmount').val(pluskoma(newamount));
+                    }
+                });
+            }
+        });
+
+        $('#ApproveApp').on('click', function () {
+            var countapp = $('#table').DataTable().rows().nodes().to$().find('input:checkbox.dt-checkboxes:checked').length;
+
+            if (countapp > 0) {
+                var items = new Array();
+                $('#table').DataTable().rows().nodes().to$().find('input:checkbox.dt-checkboxes:checked').each(function () {
+                    var idApp = table.row(this.closest('tr')).data().TransaksiId;
+                    var item = {};
+                    item.IdApp = idApp;
+                    items.push(item);
+                })
+                bootbox.prompt({
+                    title: countapp + " data application selected. Are you sure to approve this?",
+                    inputType: 'textarea',
+                    placeholder: 'Enter Description',
+                    buttons: {
+                        cancel: {
+                            label: 'Cancel'
+                        },
+                        confirm: {
+                            label: 'Approve',
+                            className: 'btn-success'
+                        }
+                    },
+                    callback: function (result) {
+                        if (result) {
+                            window.swal({
+                                title: "Processing...",
+                                text: "Please wait",
+                                imageUrl: "images/ajaxloader.gif",
+                                showConfirmButton: false,
+                                allowOutsideClick: false
+                            });
+
+                            items = JSON.stringify({ 'items': items, 'keterangan': result });
+                            $.ajax({
+                                url: "@Url.Action("ApproveApp", "ApvReturRejects")",
+                                type: 'POST',
+                                dataType: 'json',
+                                contentType: 'application/json; charset=utf-8',
+                                data: items,
+                                success: function () {
+                                    swal({
+                                        title: "Success!",
+                                        text: "The data has been saved!",
+                                        type: "success",
+                                        showCancelButton: false,
+                                        showConfirmButton: false,
+                                        timer: 1000,
+                                    });
+                                    $('#table').DataTable().ajax.reload();
+                                    Reset()
+                                },
+                                error: function (response) {
+                                    swal("Oops", "We couldn't connect to the server!", "error");
+                                }
+                            });
+                        } else if (result == "") {
+                            swal({
+                                title: "Failed!",
+                                text: "Please enter a description!",
+                                type: "warning",
+                                showCancelButton: false,
+                                showConfirmButton: false,
+                                timer: 1000,
+                            });
+                        }
+                    }
+                });
+            } else {
+                swal({
+                    title: "Failed!",
+                    text: "No data selected yet!",
+                    type: "warning",
+                    showCancelButton: false,
+                    showConfirmButton: false,
+                    timer: 1000,
+                });
+            }
+        });
+
+        $('#RejectApp').on('click', function () {
+            var countapp = $('#table').DataTable().rows().nodes().to$().find('input:checkbox.dt-checkboxes:checked').length;
+
+            if (countapp > 0) {
+                var items = new Array();
+                $('#table').DataTable().rows().nodes().to$().find('input:checkbox.dt-checkboxes:checked').each(function () {
+                    var idApp = table.row(this.closest('tr')).data().TransaksiId;
+                    var item = {};
+                    item.IdApp = idApp;
+                    items.push(item);
+                })
+                bootbox.prompt({
+                    title: countapp + " data application selected. Are you sure to reject this?",
+                    inputType: 'textarea',
+                    placeholder: 'Enter Description',
+                    buttons: {
+                        cancel: {
+                            label: 'Cancel'
+                        },
+                        confirm: {
+                            label: 'Reject',
+                            className: 'btn-danger'
+                        }
+                    },
+                    callback: function (result) {
+                        if (result) {
+                            window.swal({
+                                title: "Processing...",
+                                text: "Please wait",
+                                imageUrl: "images/ajaxloader.gif",
+                                showConfirmButton: false,
+                                allowOutsideClick: false
+                            });
+
+                            items = JSON.stringify({ 'items': items, 'keterangan': result });
+                            $.ajax({
+                                url: "@Url.Action("RejectApp", "ApvReturRejects")",
+                                type: 'POST',
+                                dataType: 'json',
+                                contentType: 'application/json; charset=utf-8',
+                                data: items,
+                                success: function () {
+                                    swal({
+                                        title: "Success!",
+                                        text: "The data has been saved!",
+                                        type: "success",
+                                        showCancelButton: false,
+                                        showConfirmButton: false,
+                                        timer: 1000,
+                                    });
+
+                                    $('#table').DataTable().ajax.reload();
+                                    Reset();
+                                },
+                                error: function (response) {
+                                    swal("Oops", "We couldn't connect to the server!", "error");
+                                }
+                            });
+                        } else if (result == "") {
+                            swal({
+                                title: "Failed!",
+                                text: "Please enter a description!",
+                                type: "warning",
+                                showCancelButton: false,
+                                showConfirmButton: false,
+                                timer: 1000,
+                            });
+                        }
+                    }
+                });
+            } else {
+                swal({
+                    title: "Failed!",
+                    text: "No data selected yet!",
+                    type: "warning",
+                    showCancelButton: false,
+                    showConfirmButton: false,
+                    timer: 1000,
+                });
+            }
+        });
+    });
+
+    function GetById(id) {
+        $.ajax({
+            url: "@Url.Action("GetIdApp", "ApvReturRejects")" + "/" + id,
+            type: "GET",
+            dataType: "json",
+            success: function (result) {
+                $.ajax({
+                    url: "@Url.Action("GetIdAppDet", "ApvReturRejects")" + "/" + id,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) {
+                        $('#tanggalMatch').val(formatDate(result.CreateDate));
+                        $('#keteranganUser').val(result.KeteranganInputer);
+                        $('#UserMatch').val(result.Inputer.Nama);
+                        $("#myModalLabel").text('View Detail - ' + result.Matching.Nama + ' ' + result.Matching.Keterangan);
+                    }
+                })
+                var totalapp = 0;
+                var htmlapp = '';
+                $.each(result.allDataAplikasi, function (index, val) {
+                    index++;
+                    htmlapp += '<tr>';
+                    htmlapp += '<td>' + index + '</td>';
+                    htmlapp += '<td>' + formatDate(val.DataRetur.CreateDate) + '</td>';
+                    htmlapp += '<td>' + formatDate(val.DataRetur.TransDate) + '</td>';
+                    htmlapp += '<td>' + val.DataRetur.SA.Nama + '</td>';
+                    htmlapp += '<td>' + val.DataRetur.Fund.Nama + '</td>';
+                    htmlapp += '<td>' + val.DataRetur.MI.Nama + '</td>';
+                    htmlapp += '<td>' + val.DataRetur.NamaNasabah + '</td>';
+                    htmlapp += '<td>' + pluskoma(val.DataRetur.Nominal) + '</td>';
+                    htmlapp += '</tr>';
+                    totalapp = totalapp + val.DataRetur.AmountNominal;
+                });
+                $('.tbodyapp').html(htmlapp);
+                $('#totalApp').val(pluskoma(totalapp));
+
+                var totalfund = 0;
+                var htmlfund = '';
+                $.each(result.allDataFund, function (index, val) {
+                    index++;
+                    htmlfund += '<tr>';
+                    htmlfund += '<td>' + index + '</td>';
+                    htmlfund += '<td>' + formatDate(val.DataFund.CreateDate) + '</td>';
+                    htmlfund += '<td>' + formatDate(val.DataFund.Tanggal) + '</td>';
+                    htmlfund += '<td>' + val.DataFund.Rekening.NoRek + '</td>';
+                    htmlfund += '<td>' + val.DataFund.Rekening.NamaRek + '</td>';
+                    htmlfund += '<td>' + val.DataFund.CCY + '</td>';
+                    htmlfund += '<td>' + val.DataFund.Keterangan + '</td>';
+                    htmlfund += '<td>' + pluskoma(val.DataFund.Jumlah) + '</td>';
+                    htmlfund += '<td>' + pluskoma(val.DataFund.Saldo) + '</td>';
+                    htmlfund += '</tr>';
+                    totalfund = totalfund + val.DataFund.Jumlah;
+                });
+                $('.tbodyfund').html(htmlfund);
+                $('#totalFund').val(pluskoma(totalfund));
+
+                $('#myModal').modal('show');
+            }
+        })
+    }
+
+    function pluskoma(angka) {
+        var rupiah = '';
+        var angkarev = angka.toString().split('').reverse().join('');
+        for (var i = 0; i < angkarev.length; i++) if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + ',';
+        return rupiah.split('', rupiah.length - 1).reverse().join('');
+    }
+
+    function minkoma(angka) {
+        var bil = angka;
+        var loop = Math.floor(angka.length / 3);
+        for (var i = 0; i < loop; i++) {
+            bil = bil.replace(',', '');
+        }
+        return bil;
+    }
+
+    function formatDate(dates) {
+        date = new Date(parseInt(dates.substr(6)));
+        var year = date.getFullYear();
+        var month = (1 + date.getMonth()).toString();
+        month = month.length > 1 ? month : '0' + month;
+        var day = date.getDate().toString();
+        day = day.length > 1 ? day : '0' + day;
+        var hour = date.getHours().toString();
+        hour = hour.length > 1 ? hour : '0' + hour;
+        var min = date.getMinutes().toString();
+        min = min.length > 1 ? min : '0' + min;
+        var sec = date.getSeconds().toString();
+        sec = sec.length > 1 ? sec : '0' + sec;
+        return day + '/' + month + '/' + year;
+    }
+
+    function Reset() {
+        $('#totalData').val('0');
+        $('#totalAmount').val('0');
+    }
+</script>
+

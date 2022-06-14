@@ -1,0 +1,518 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .input-sm{
+        height:34px;
+    }
+
+    div.dataTables_wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+</style>
+
+<h3>Input Data Retur</h3>
+<div class="row">
+    <div class="well">
+        <div class="pull-right">
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalUpload">Upload</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="ClearScreen()">Tambah Data Retur</button>
+        </div>
+        <div class="clearfix" style="margin:10px;"></div>
+        <table id="table" class="table table-bordered table-hover" style="width:100%">
+            <thead>
+                <tr>
+                    @*<th></th>*@
+                    <th>Tgl. Transaksi</th>
+                    <th>SA Name</th>
+                    <th>Fund Name</th>
+                    <th>MI Name</th>
+                    <th>No. Rekening</th>
+                    <th>IFUA</th>
+                    <th>Nama Nasabah</th>
+                    <th>Bank</th>
+                    <th>Nominal</th>
+                    <th>Keterangan</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="myModalLabel">Retur Form</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="Id" />
+                <div class="form-group col-sm-6">
+                    <label for="TglTransaksi">Tgl. Transaksi</label>
+                    <input type="date" class="form-control input-sm" id="TglTransaksi" placeholder="Tanggal Transaksi" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="NamaBank">Nama Bank</label>
+                    <input type="text" oninput="this.value = this.value.toUpperCase()" class="form-control input-sm" id="NamaBank" placeholder="Nama Bank" />
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group col-sm-6">
+                    <label for="RekNasabah">No. Rekening Nasabah</label>
+                    <input type="text" class="form-control input-sm" id="RekNasabah" placeholder="Rekening Nasabah" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="NamaNasabah">Nama Nasabah</label>
+                    <input type="text" oninput="this.value = this.value.toUpperCase()" class="form-control input-sm" id="NamaNasabah" placeholder="Nama Nasabah" />
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+                <div class="form-group col-sm-6">
+                    <label for="NomorRekening">No. Rekening Reksadana</label>
+                    <input type="text" class="form-control input-sm" id="NomorRekening" placeholder="No Rekening Reksadana" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="IFUACode">IFUA</label>
+                    <input type="text" class="form-control input-sm" id="IFUACode" placeholder="IFUA" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="SAs">SA Name</label>
+                    <select id="SAs" class="form-control select2" style="width:100%"></select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="Fund">Fund Name</label>
+                    <select id="Fund" class="form-control select2" style="width:100%"></select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="MIs">MI Name</label>
+                    <select id="MIs" class="form-control select2" style="width:100%;"></select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="Nominal">Nominal</label>
+                    <input type="text" class="form-control input-sm" id="Nominal" placeholder="Nominal" value="0" oninput="this.value = this.value.replace(/[^0-9]/g, '');" onclick="this.setSelectionRange(0, this.value.length)" />
+                </div>
+                <input type="hidden" class="form-control" id="Id" />
+                <div class="form-group col-sm-6">
+                    <label for="PaymentDate">Payment Date</label>
+                    <input type="date" class="form-control input-sm" id="PaymentDate" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="NoJurnal">No. Jurnal</label>
+                    <input type="text" class="form-control input-sm" id="NoJurnal" placeholder="Nomor Jurnal" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="Nominal">Keterangan</label>
+                    <textarea type="text" class="form-control input-sm" id="KeteranganRetur" placeholder="Keterangan Retur"></textarea>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="Save" onclick="Save();">Simpan</button>
+                <button type="button" class="btn btn-primary" id="Update" style="display:none;" onclick="Edit();">Update</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="ClearScreen()" ;>Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModalUpload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="myModalLabel">Upload Retur</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Browse File</label>
+                        <div class="col-md-6">
+                            <input type="file" multiple="multiple" class="form-control" name="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button class="btn btn-primary" id="Upload" data-loading-text="Processing">Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="result" class="well">
+                    <h4>Daftar Hasil Upload</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama File</th>
+                                <th>Status Upload</th>
+                                <th>Berhasil Terupload</th>
+                                <th>Gagal Terupload</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbodyup"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/sweetalert/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+<link href="~/Content/sweetalert/sweetalert.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+
+        $('.select2').select2({
+            theme: "bootstrap",
+            dropdownAutoWidth: true
+
+        });
+
+        LoadSACombo();
+        LoadMICombo();
+        LoadFundCombo();
+        LoadBankCombo();
+        ClearScreen();
+        $('#result').hide();
+
+        var table = $('#table').DataTable({
+            "scrollX": true,
+            "ajax": {
+                "url": "@Url.Action("GetList", "Returs")",
+                "type": "POST",
+                "datatype": "json"
+            },
+            "columns": [
+                    //{ "data": "Id", "name": "Id", "autoWidth": true }, //index 0
+                    { "data": "TransDate", "name": "TransDate", "autoWidth": true, "render": function (d) { return moment(d).format('DD/MM/YY') } }, //index 1
+                    { "data": "SA", "name": "SA", "autoWidth": true },               //index 4
+                    {
+                        "data": "Fund", "name": "Fund", "autoWidth": true,
+                        //"render": function (d) {
+                        //    return d.substr(11, d.length)
+                        //}
+                    },   //index 5
+                    { "data": "MI", "name": "MI", "autoWidth": true },   //index 6
+                    { "data": "RekeningNasabah", "name": "RekeningNasabah", "autoWidth": true },   //index 7
+                    { "data": "IFUA", "name": "IFUA", "autoWidth": true },   //index 7
+                    { "data": "NamaNasabah", "name": "NamaNasabah", "autoWidth": true },   //index 8
+                    { "data": "Bank", "name": "Bank", "autoWidth": true },   //index 8
+                    { "data": "Nominal", "name": "Nominal", "autoWidth": true, "render": $.fn.dataTable.render.number('.', '', 0, '') },   //index 9
+                    { "data": "KeteranganRetur", "name": "KeteranganRetur", "autoWidth": true },   //index 8
+                    {
+                        "data": "MatchingNama", "name": "MatchingNama", "autoWidth": true,
+                        "render": function (data, type, row) {
+                            return "<span class='label label-xs label-" + row.MatchingWarna + "'>" + row.MatchingNama + "</span>"
+                        }
+                    },   //index 10
+                    {
+                        "autoWidth": true,
+                        "render": function (data, type, row) {
+                            return "<button class='btn btn-success btn-xs' onclick='GetById(" + row.Id + ")'>Edit</button> <button class='btn btn-danger btn-xs' onclick='Delete(" + row.Id + ")'>Delete</button>"
+                        }
+                    }
+            ],
+            'columnDefs': [
+              //{
+              //    'targets': 0,
+              //    'checkboxes': {
+              //        'selectRow': true
+              //    }
+              //},
+              {
+                  'targets': 1,
+                  'render': $.fn.dataTable.render.ellipsis(15)
+              }
+            ]
+        });
+    })
+
+    function GetById(id) {
+        $.ajax({
+            url: "@Url.Action("GetById", "Returs")/" + id,
+            type: "GET",
+            dataType: "json",
+            success: function (result) {
+                $('#Id').val(result.Id);
+                $('#TglTransaksi').val(formatDate(result.TransDate));
+                $('#NomorRekening').val(result.NoRekening);
+                $('#NamaNasabah').val(result.NamaNasabah);
+                $('#RekNasabah').val(result.RekeningNasabah);
+                //$('#NamaReksadana').val(result.NamaReksadana);
+                $('#NamaBank').val(result.NamaBank);
+                $('#SAs').val(result.SAId).trigger('change');
+                $('#Fund').val(result.FundId).trigger('change');
+                $('#MIs').val(result.MIId).trigger('change');
+                $('#Nominal').val(result.Nominal);
+                $('#KeteranganRetur').val(result.KeteranganRetur);
+                $('#IFUACode').val(result.IFUA);
+                $('#PaymentDate').val(formatDate(result.PaymentDate));
+                $('#NoJurnal').val(result.NoJurnal);
+
+                $('#myModal').modal('show');
+                $('#Update').show();
+                $('#Save').hide();
+            }
+        })
+    }
+
+    function LoadSACombo() {
+        $.ajax({
+            url: '@Url.Action("GetSA", "Returs")/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                var sa = $('#SAs');
+                $("<option></option>").val(null).text("-- Pilih SA --").appendTo(sa);
+                $.each(result, function (i, sell) {
+                    $("<option></option>").val(sell.Id).text(sell.Nama).appendTo(sa);
+                });
+            }
+        });
+    }
+
+    function LoadFundCombo() {
+        $.ajax({
+            url: '@Url.Action("GetFund", "Returs")/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                var fu = $('#Fund');
+                $("<option></option>").val(null).text("-- Pilih Fund --").appendTo(fu);
+                $.each(result, function (i, fund) {
+                    $("<option></option>").val(fund.Id).text(fund.Nama).appendTo(fu);
+                });
+            }
+        });
+    }
+
+    function LoadMICombo() {
+        $.ajax({
+            url: '@Url.Action("GetMI", "Returs")/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                var mi = $('#MIs');
+                $("<option></option>").val(null).text("-- Pilih MI --").appendTo(mi);
+                $.each(result, function (i, mis) {
+                    $("<option></option>").val(mis.Id).text(mis.Nama).appendTo(mi);
+                });
+            }
+        });
+    }
+
+    function LoadBankCombo() {
+        $.ajax({
+            url: '@Url.Action("GetBank", "Returs")/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                var bank = $('#Bank');
+                $("<option></option>").val(null).text("-- Pilih Bank --").appendTo(bank);
+                $.each(result, function (i, value) {
+                    $("<option></option>").val(value.Id).text(value.Nama).appendTo(bank);
+                });
+            }
+        });
+    }
+
+
+
+    function Save() {
+        var data = new Object();
+        data.TransDate = $('#TglTransaksi').val();
+        data.NoRekening = $('#NomorRekening').val();
+        data.NamaReksadana = $('#NamaReksadana').val();
+        data.NamaBank = $('#NamaBank').val();
+        data.RekeningNasabah = $('#RekNasabah').val();
+        data.NamaNasabah = $('#NamaNasabah').val();
+        data.SAId = $('#SAs').val();
+        data.FundId = $('#Fund').val();
+        data.MIId = $('#MIs').val();
+        data.Nominal = $('#Nominal').val();
+        data.KeteranganRetur = $('#KeteranganRetur').val();
+        data.IFUA = $('#IFUACode').val();
+        data.PaymentDate = $('#PaymentDate').val();
+        data.NoJurnal = $('#NoJurnal').val();
+        $.ajax({
+            url: "@Url.Action("Save", "Returs")",
+            type: 'POST',
+            dataType: 'json',
+            data: data,
+            success: function (result) {
+                swal({
+                    title: "Saved!",
+                    text: "That data has been saved!",
+                    type: "success",
+                    timer: 1000
+                });
+
+                $('#table').DataTable().ajax.reload();
+                $('#myModal').modal('hide');
+            }
+        });
+    }
+
+    function Edit() {
+        var data = new Object();
+        data.Id = $('#Id').val();
+        data.TransDate = $('#TglTransaksi').val();
+        data.NoRekening = $('#NomorRekening').val();
+        data.NamaReksadana = $('#NamaReksadana').val();
+        data.NamaBank = $('#NamaBank').val();
+        data.RekeningNasabah = $('#RekNasabah').val();
+        data.NamaNasabah = $('#NamaNasabah').val();
+        data.SAId = $('#SAs').val();
+        data.FundId = $('#Fund').val();
+        data.MIId = $('#MIs').val();
+        data.Nominal = $('#Nominal').val();
+        data.KeteranganRetur = $('#KeteranganRetur').val();
+        data.IFUA = $('#IFUACode').val();
+        data.PaymentDate = $('#PaymentDate').val();
+        data.NoJurnal = $('#NoJurnal').val();
+        $.ajax({
+            url: "@Url.Action("Save", "Returs")",
+            data: data,
+            type: "POST",
+            dataType: "json",
+            success: function (result) {
+                swal({
+                    title: "Saved!",
+                    text: "That data has been saved!",
+                    type: "success",
+                    timer: 1000
+                });
+
+                $('#table').DataTable().ajax.reload();
+                ClearScreen();
+                $('#myModal').modal('hide');
+            }
+        });
+    }
+
+    function Delete(id) {
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Yes, delete it!",
+            closeOnConfirm: false
+        }, function () {
+            $.ajax({
+                url: "@Url.Action("Delete", "Returs")/" + id,
+                type: "POST",
+                success: function (response) {
+                    swal({
+                        title: "Deleted!",
+                        text: "That data has been delete!",
+                        type: "success",
+                        timer: 1000
+                    });
+
+                    $('#table').DataTable().ajax.reload();
+                },
+                error: function (response) {
+                    swal("Oops", "We couldn't connect to the server!", "error");
+                }
+            });
+        });
+    }
+
+    $('#Upload').on('click', function () {
+        $("input[type='file']").prop("disabled", true);
+        $('#Upload').button('loading');
+        $('.tbodyup').html('');
+        $('#result').hide();
+
+        var data = new FormData();
+
+        $.each($("input[type='file']")[0].files, function (i, file) {
+            data.append('files', file);
+        });
+
+        $.ajax({
+            url: '@Url.Action("UploadFiles", "Returs")',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: data,
+            success: function (result) {
+                var html = '';
+                var no = 1;
+                $.each(result.ResultUpload, function (i, value) {
+                    html += '<tr>';
+                    html += '<td>' + no++ + '</td>';
+                    html += '<td>' + value.namafile + '</td>';
+                    html += '<td><span class="label label-' + value.warna + '">' + value.status + '</td>';
+                    html += '<td>' + value.success + ' data</td>';
+                    html += '<td>' + value.fails + ' data</td>';
+                    html += '</tr>';
+                })
+
+                $('.tbodyup').append(html);
+                $('#result').show();
+                $("input[type='file']").prop("disabled", false);
+                $('#Upload').button('reset');
+
+                $('#table').DataTable().ajax.reload();
+            },
+            error: function (xhr, status, error) {
+                $("input[type='file']").prop("disabled", false);
+                $('#Upload').button('reset');
+
+                var err = JSON.stringify(xhr.responseText.replace(/<[^>]+>/g, '').replaceAll('\r\n', '').trim());
+                alert("An error has occured. Error Message: \n\n" + err);
+            }
+        })
+    })
+
+    function formatDate(dates) {
+        date = new Date(parseInt(dates.substr(6)));
+        var year = date.getFullYear();
+        var month = (1 + date.getMonth()).toString();
+        month = month.length > 1 ? month : '0' + month;
+        var day = date.getDate().toString();
+        day = day.length > 1 ? day : '0' + day;
+
+        return year + '-' + month + '-' + day;
+    }
+
+    function ClearScreen() {
+        $('#Update').hide();
+        $('#Save').show();
+        $('#Id').val('');
+        $('#TglTransaksi').val('');
+        $('#NomorRekening').val('');
+        $('#NamaReksadana').val('');
+        $('#RekNasabah').val('');
+        $('#NamaNasabah').val('');
+        $('#Bank option').eq(0).prop('selected', true).trigger('change');
+        $('#SAs option').eq(0).prop('selected', true).trigger('change');
+        $('#Fund option').eq(0).prop('selected', true).trigger('change');
+        $('#MIs option').eq(0).prop('selected', true).trigger('change');
+        $('#Nominal').val('0');
+        $('#KeteranganRetur').val('');
+        $('#IFUACode').val('');
+        $('#PaymentDate').val('');
+        $('#NoJurnal').val('');
+    }
+</script>

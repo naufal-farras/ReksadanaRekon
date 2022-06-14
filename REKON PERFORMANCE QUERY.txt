@@ -1,0 +1,1 @@
+SELECT CAST(CreateDate AS DATE) AS Rekon, COUNT(Id) as TotalTransaksi, MIN(CreateDate) AS MINDATE, MAX(CreateDate) AS MAXDATE FROM Transaksis WHERE CreateDate < '2021-01-01' GROUP BY CAST(CreateDate AS DATE) ORDER BY Rekon

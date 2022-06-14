@@ -1,0 +1,203 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="well">
+        <h4>Upload Subscription Data</h4>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-2">Browse File</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="CategoryFile">
+                        <option value="1">File Fund BCA</option>
+                        <option value="2">File Fund BNI</option>
+                        <option value="3">File Fund Mandiri</option>
+                        @*<option value="4">File Fund OCBC</option>
+                        <option value="5">File Fund Danamon</option>*@
+                        <option value="6">File Aplikasi</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <input type="file" multiple="multiple" class="form-control" name="" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button class="btn btn-primary" id="Upload" data-loading-text="Processing">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="result" class="well">
+        <h4>Daftar Hasil Upload</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama File</th>
+                    <th>Status Upload</th>
+                    <th>Berhasil Terupload</th>
+                    <th>Gagal Terupload</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+    <div class="well text-center">
+        <h1>
+            <span id="hour">00</span> :
+            <span id="min">00</span> :
+            <span id="sec">00</span> :
+            <span id="milisec">00</span>
+        </h1>
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('#result').hide();
+    })
+
+    $('#Upload').on('click', function () {
+        $("input[type='file']").prop("disabled", true);
+        $('#Upload').button('loading');
+        reset();
+        start();
+        $('.tbody').html('');
+        $('#result').hide();
+
+        var data = new FormData();
+        data.append('category', $('#CategoryFile').val());
+        $.each($("input[type='file']")[0].files, function (i, file) {
+            data.append('files', file);
+        });
+
+        $.ajax({
+            url: '@Url.Action("UploadFiles2", "Uploads")',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: data,
+            success: function (result) {
+                //console.log(result)
+                var html = '';
+                var no = 1;
+                $.each(result.ResultUpload, function (i, value) {
+                    html += '<tr>';
+                    html += '<td>' + no++ + '</td>';
+                    html += '<td>' + value.namafile + '</td>';
+                    html += '<td><span class="label label-' + value.warna + '">' + value.status + '</td>';
+                    html += '<td>' + value.success + ' data</td>';
+                    html += '<td>' + value.fails + ' data</td>';
+                    html += '</tr>';
+                })
+
+                $('.tbody').append(html);
+                $('#result').show();
+                stop();
+                $("input[type='file']").prop("disabled", false);
+                $('#Upload').button('reset');
+            },
+            error: function (xhr, status, error) {
+                stop();
+                $("input[type='file']").prop("disabled", false);
+                $('#Upload').button('reset');
+
+                var err = JSON.stringify(xhr.responseText.replace(/<[^>]+>/g, '').replaceAll('\r\n', '').trim());
+                alert("An error has occured. Error Message: \n\n" + err);
+            }
+        })
+    })
+
+
+    //=====================Stopwatch=====================//
+    function start() {
+        x = setInterval(timer, 10);
+    } /* Start */
+
+    function stop() {
+        clearInterval(x);
+    } /* Stop */
+
+    var milisec = 0;
+    var sec = 0; /* holds incrementing value */
+    var min = 0;
+    var hour = 0;
+
+    /* Contains and outputs returned value of  function checkTime */
+
+    var miliSecOut = 0;
+    var secOut = 0;
+    var minOut = 0;
+    var hourOut = 0;
+
+    /* Output variable End */
+
+
+    function timer() {
+        /* Main Timer */
+
+
+        miliSecOut = checkTime(milisec);
+        secOut = checkTime(sec);
+        minOut = checkTime(min);
+        hourOut = checkTime(hour);
+
+        milisec = ++milisec;
+
+        if (milisec === 100) {
+            milisec = 0;
+            sec = ++sec;
+        }
+
+        if (sec == 60) {
+            min = ++min;
+            sec = 0;
+        }
+
+        if (min == 60) {
+            min = 0;
+            hour = ++hour;
+
+        }
+
+
+        document.getElementById("milisec").innerHTML = miliSecOut;
+        document.getElementById("sec").innerHTML = secOut;
+        document.getElementById("min").innerHTML = minOut;
+        document.getElementById("hour").innerHTML = hourOut;
+
+    }
+
+
+    /* Adds 0 when value is <10 */
+
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    function reset() {
+
+
+        /*Reset*/
+
+        milisec = 0;
+        sec = 0;
+        min = 0
+        hour = 0;
+
+        document.getElementById("milisec").innerHTML = "00";
+        document.getElementById("sec").innerHTML = "00";
+        document.getElementById("min").innerHTML = "00";
+        document.getElementById("hour").innerHTML = "00";
+
+    }
+
+</script>

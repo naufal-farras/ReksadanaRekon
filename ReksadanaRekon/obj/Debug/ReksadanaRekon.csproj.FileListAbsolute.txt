@@ -1,0 +1,664 @@
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\csc.exe
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\vbc.exe
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.pdb
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Antlr3.Runtime.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Newtonsoft.Json.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Owin.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Helpers.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Mvc.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Optimization.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Razor.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\WebGrease.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Helpers.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Mvc.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Optimization.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Razor.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Newtonsoft.Json.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.csprojResolveAssemblyReference.cache
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.InitialCreate.resources
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.Cache
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.InitialMigration.resources
+c:\users\megaj\documents\visual studio 2015\Projects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddUserToMaster.resources
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\csc.exe
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\vbc.exe
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.pdb
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Antlr3.Runtime.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\DocumentFormat.OpenXml.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\EPPlus.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\itextsharp.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Newtonsoft.Json.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Owin.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Helpers.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Mvc.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Optimization.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Razor.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\WebGrease.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\DocumentFormat.OpenXml.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\EPPlus.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\itextsharp.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Helpers.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Mvc.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Optimization.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Razor.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Newtonsoft.Json.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.firstMigration.resources
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.editTransaction.resources
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.newtransaction.resources
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.Cache
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+D:\Net Language\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\csc.exe
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\vbc.exe
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\ReksadanaRekon.pdb
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Antlr3.Runtime.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Dapper.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\DocumentFormat.OpenXml.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\EPPlus.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\itextsharp.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Newtonsoft.Json.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Owin.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Linq.Dynamic.Core.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Helpers.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Mvc.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Optimization.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Razor.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\WebGrease.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Dapper.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\DocumentFormat.OpenXml.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\EPPlus.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\itextsharp.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Linq.Dynamic.Core.pdb
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Linq.Dynamic.Core.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Helpers.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Mvc.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Optimization.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.Razor.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Newtonsoft.Json.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.csprojResolveAssemblyReference.cache
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.firstMigration.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.editTransaction.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.newtransaction.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyDataFund.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRed_Swi.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddDataFund.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRedemption.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRetur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddFKBank_Retur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.Cache
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRetur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTrDataRetur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNewDataRedemp.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ChangeAplikasiRed_Redemp.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddProp_Redemp_Retur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddKeteranganRetur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.Add_NamaReksadana_DataRetur.resources
+D:\DotNetProjects\ReksadanaRekon\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyReturCol.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\csc.exe
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\vbc.exe
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.pdb
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Antlr3.Runtime.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Dapper.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\DocumentFormat.OpenXml.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\EPPlus.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\itextsharp.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Newtonsoft.Json.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Owin.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Helpers.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Mvc.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Optimization.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Razor.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\WebGrease.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Dapper.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\DocumentFormat.OpenXml.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\EPPlus.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\itextsharp.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.pdb
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Helpers.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Mvc.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Optimization.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.Razor.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Newtonsoft.Json.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.AssemblyReference.cache
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.firstMigration.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.editTransaction.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.newtransaction.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyDataFund.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRed_Swi.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddDataFund.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRedemption.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRetur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddFKBank_Retur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRetur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTrDataRetur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNewDataRedemp.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ChangeAplikasiRed_Redemp.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddProp_Redemp_Retur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddKeteranganRetur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.Add_NamaReksadana_DataRetur.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyReturCol.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.cache
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.CoreCompileInputs.cache
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.CopyComplete
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNamaBankColoumn.resources
+F:\MII\2021\PROJECT\2. RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.RemoveFKBankId.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\csc.exe
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\vbc.exe
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\ReksadanaRekon.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\ReksadanaRekon.pdb
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Antlr3.Runtime.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Dapper.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\DocumentFormat.OpenXml.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\EntityFramework.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\EPPlus.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\itextsharp.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Newtonsoft.Json.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Owin.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Linq.Dynamic.Core.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Helpers.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Mvc.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Optimization.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Razor.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.WebPages.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\WebGrease.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Dapper.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\DocumentFormat.OpenXml.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\EPPlus.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\itextsharp.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Linq.Dynamic.Core.pdb
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Linq.Dynamic.Core.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Helpers.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Mvc.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Optimization.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.Razor.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.WebPages.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Newtonsoft.Json.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\EntityFramework.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.firstMigration.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.editTransaction.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.newtransaction.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyDataFund.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRed_Swi.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddDataFund.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRedemption.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRetur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddFKBank_Retur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRetur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTrDataRetur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNewDataRedemp.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ChangeAplikasiRed_Redemp.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddProp_Redemp_Retur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddKeteranganRetur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.Add_NamaReksadana_DataRetur.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyReturCol.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNamaBankColoumn.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.RemoveFKBankId.resources
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.cache
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.CoreCompileInputs.cache
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.CopyComplete
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+F:\MII\2021\PROJECT\PROJECT ON DEV\2. RENA BNI BSD (Dev)\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\csc.exe
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\vbc.exe
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.pdb
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Antlr3.Runtime.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Dapper.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\DocumentFormat.OpenXml.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\EPPlus.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\itextsharp.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Newtonsoft.Json.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Owin.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Helpers.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Mvc.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Optimization.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Razor.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\WebGrease.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Dapper.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\DocumentFormat.OpenXml.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\EPPlus.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\itextsharp.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.pdb
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Helpers.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Mvc.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Optimization.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Razor.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Newtonsoft.Json.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csprojResolveAssemblyReference.cache
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.firstMigration.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.editTransaction.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.newtransaction.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyDataFund.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRed_Swi.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddDataFund.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRedemption.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRetur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddFKBank_Retur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRetur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTrDataRetur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNewDataRedemp.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ChangeAplikasiRed_Redemp.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddProp_Redemp_Retur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddKeteranganRetur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.Add_NamaReksadana_DataRetur.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyReturCol.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNamaBankColoumn.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.RemoveFKBankId.resources
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.Cache
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb
+D:\Net Language\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddPasifTable.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\csc.exe
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\System.Collections.Immutable.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\System.Reflection.Metadata.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\vbc.exe
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\roslyn\VBCSCompiler.exe.config
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.dll.config
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\ReksadanaRekon.pdb
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Antlr3.Runtime.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Dapper.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\DocumentFormat.OpenXml.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.SqlServer.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\EPPlus.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\itextsharp.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Web.Infrastructure.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Newtonsoft.Json.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Owin.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Helpers.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Mvc.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Optimization.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Razor.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Deployment.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Razor.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\WebGrease.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Dapper.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\DocumentFormat.OpenXml.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\EPPlus.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\itextsharp.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.pdb
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Linq.Dynamic.Core.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Helpers.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Mvc.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Optimization.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.Razor.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Deployment.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\System.Web.WebPages.Razor.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Antlr3.Runtime.pdb
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Newtonsoft.Json.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\EntityFramework.SqlServer.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Google.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csprojResolveAssemblyReference.cache
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.firstMigration.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.editTransaction.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.newtransaction.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyDataFund.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRed_Swi.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddDataFund.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRedemption.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddRetur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddFKBank_Retur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTransRetur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddTrDataRetur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNewDataRedemp.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ChangeAplikasiRed_Redemp.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddProp_Redemp_Retur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddKeteranganRetur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.Add_NamaReksadana_DataRetur.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.ModifyReturCol.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddNamaBankColoumn.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.RemoveFKBankId.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.Migrations.AddPasifTable.resources
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.csproj.GenerateResource.Cache
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.dll
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Debug\ReksadanaRekon.pdb

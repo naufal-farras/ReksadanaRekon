@@ -1,0 +1,104 @@
+﻿@model ReksadanaRekon.ViewModels.DateVM
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<div class="row">
+    <div class="well">
+        <h4>Download Data Excel</h4>
+        @using (Html.BeginForm("DownloadReport", "Reports", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" value="" class="btn btn-sm btn-primary">Download</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>*@
+<div class="row">
+    <div class="well">
+        <h4>Download Berita Acara</h4>
+        @using (Html.BeginForm("DownloadReportPdfSubs", "Reports", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form1" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-offset-1 col-sm-2" for="inputSmall">Report Type</label>
+                        <div class="col-sm-2">
+                            @Html.DropDownListFor(model => model.RekonType, Model.RekonTypeList, htmlAttributes: new { @class = "form-control select-report" })
+                            @Html.ValidationMessageFor(model => model.RekonType, "", new { @class = "text-danger" })
+                        </div>
+                        <label class="control-label col-sm-1" for="inputSmall">Tanggal</label>
+                        <div class="col-sm-3">
+                            @Html.TextBoxFor(model => model.startdate, htmlAttributes: new { @class = "form-control", @type = "date" })
+                            @Html.ValidationMessageFor(model => model.startdate, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-2">
+                            <input type="submit" value="Download" class="btn btn-primary">
+                        </div>
+                    </div>
+                    @*<div class="form-group">
+                        <div class="col-md-offset-7 col-md-2">
+                            <button type="submit" value="" class="btn btn-sm btn-primary">Download</button>
+                        </div>
+                    </div>*@
+                </fieldset>
+            </div>
+        }
+    </div>
+</div>
+
+@*<div class="row">
+    <div class="well">
+        <h4>Download Data PDF Using Ajax</h4>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" id="download" onclick="Download()" class="btn btn-sm btn-primary">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<link href="~/Content/sweetalert/sweetalert.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+<script src="~/Content/sweetalert/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        
+    });
+
+    $('.select-report').on('change', function () {
+        console.log('clicked')
+        var $this = $(this).val();
+        if ($this == 1) {
+            $('.form1').attr('action', 'Reports/DownloadReportPdfSubs')
+        } else if ($this == 2) {
+            $('.form1').attr('action', 'Reports/DownloadReportPdfReds')
+        } else if ($this == 3) {
+            $('.form1').attr('action', 'Reports/DownloadReportPdfReturs')
+        }
+    })
+
+    @*function Download() {
+        //var startDate = $('#date-start').val();
+        //var endDate = $('#date-end').val();
+        console.log("disini")
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("DownloadReportPdf", "Reports")",
+            async: false,
+            dataType: "JSON",
+            success: function (data) {
+
+            }
+        });
+    }*@
+</script>
