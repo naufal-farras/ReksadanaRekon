@@ -12,7 +12,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ReksadanaRekon.Controllers.Transactions
+namespace ReksadanaRekon.Controllers.Transactions 
 {
     public class ReturManualsController : Controller
     {
