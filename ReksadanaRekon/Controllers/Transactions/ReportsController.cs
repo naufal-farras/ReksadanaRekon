@@ -1908,7 +1908,8 @@ namespace ReksadanaRekon.Controllers.Transactions
                             NamaNasabah = x.NamaNasabah,
                             NoRekening = x.NoRekening,
                             Nominal = x.Nominal,
-                            Status = x.Matching.Nama
+                            Status = x.Matching.Nama,
+                            SaRefrence = x.SARefrence
                         }).ToList();
 
 
@@ -2547,8 +2548,8 @@ namespace ReksadanaRekon.Controllers.Transactions
             pdfDoc.Add(line);
 
             //Table
-            table = new PdfPTable(7);
-            widths = new float[] { 10f, 55f, 90f, 55f, 90f, 30f, 30f };
+            table = new PdfPTable(8);
+            widths = new float[] { 10f, 55f, 90f, 55f, 90f, 30f, 30f, 30f };
             //var backcolour = new BaseColor(255, 159, 64);
             table.SetWidths(widths);
             table.WidthPercentage = 100;
@@ -2595,6 +2596,13 @@ namespace ReksadanaRekon.Controllers.Transactions
             table.AddCell(cell);
 
             cell = new PdfPCell(new Phrase(String.Format("Nominal"), FontFactory.GetFont("Arial", 7, Font.BOLD, BaseColor.BLACK)));
+            cell.Rowspan = 2;
+            cell.HorizontalAlignment = Element.ALIGN_CENTER;
+            cell.VerticalAlignment = Element.ALIGN_MIDDLE;
+            cell.BackgroundColor = backcolour;
+            table.AddCell(cell);
+
+            cell = new PdfPCell(new Phrase(String.Format("SA Refrence"), FontFactory.GetFont("Arial", 7, Font.BOLD, BaseColor.BLACK)));
             cell.Rowspan = 2;
             cell.HorizontalAlignment = Element.ALIGN_CENTER;
             cell.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -2651,6 +2659,11 @@ namespace ReksadanaRekon.Controllers.Transactions
 
                     cell = new PdfPCell(new Phrase(String.Format(data.Nominal.ToString("n0")), FontFactory.GetFont("Arial", 7, Font.NORMAL, BaseColor.BLACK)));
                     cell.HorizontalAlignment = Element.ALIGN_RIGHT;
+                    cell.VerticalAlignment = Element.ALIGN_MIDDLE;
+                    table.AddCell(cell);
+
+                    cell = new PdfPCell(new Phrase(String.Format(data.SaRefrence == null ? "Tidak Tersedia" : data.SaRefrence), FontFactory.GetFont("Arial", 7, Font.NORMAL, BaseColor.BLACK)));
+                    cell.HorizontalAlignment = Element.ALIGN_CENTER;
                     cell.VerticalAlignment = Element.ALIGN_MIDDLE;
                     table.AddCell(cell);
 

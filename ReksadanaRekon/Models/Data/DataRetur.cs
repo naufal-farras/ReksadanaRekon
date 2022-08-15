@@ -33,5 +33,7 @@ namespace ReksadanaRekon.Models.Data
         public DateTime PaymentDate { get; set; }
         public string IFUA { get; set; }
         public string NoJurnal { get; set; }
+        public string IFUAName { get; set; }
+        public string SARefrence { get; set; }
     }
 }

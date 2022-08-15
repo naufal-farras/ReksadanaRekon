@@ -21,7 +21,7 @@
     td {
         font-size: 12px;
     }
-</style>
+</style> 
 
 <h3>Input Data Retur</h3>
 <div class="row">
@@ -39,11 +39,13 @@
                     <th>SA Name</th>
                     <th>Fund Name</th>
                     <th>MI Name</th>
+                    <th>IFUA Name</th>
                     <th>No. Rekening</th>
                     <th>IFUA</th>
                     <th>Nama Nasabah</th>
                     <th>Bank</th>
                     <th>Nominal</th>
+                    <th>SA Refrence</th>
                     <th>Keterangan</th>
                     <th>Status</th>
                     <th>Aksi</th>
@@ -81,6 +83,14 @@
                 <div class="clearfix"></div>
                 <hr />
                 <div class="form-group col-sm-6">
+                    <label for="Nominal">IFUA Name</label>
+                    <textarea type="text" class="form-control input-sm" id="IFUAName" placeholder="IFUAName"></textarea>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="Nominal">SA Refrence No</label>
+                    <textarea type="text" class="form-control input-sm" id="SARefrence" placeholder="SA Refrence No"></textarea>
+                </div>
+                <div class="form-group col-sm-6">
                     <label for="NomorRekening">No. Rekening Reksadana</label>
                     <input type="text" class="form-control input-sm" id="NomorRekening" placeholder="No Rekening Reksadana" />
                 </div>
@@ -117,6 +127,7 @@
                     <label for="Nominal">Keterangan</label>
                     <textarea type="text" class="form-control input-sm" id="KeteranganRetur" placeholder="Keterangan Retur"></textarea>
                 </div>
+               
                 <div class="clearfix"></div>
             </div>
             <div class="modal-footer">
@@ -190,7 +201,7 @@
         LoadFundCombo();
         LoadBankCombo();
         ClearScreen();
-        $('#result').hide();
+        $('#result').hide(); 
 
         var table = $('#table').DataTable({
             "scrollX": true,
@@ -210,11 +221,13 @@
                         //}
                     },   //index 5
                     { "data": "MI", "name": "MI", "autoWidth": true },   //index 6
+                    { "data": "IFUAName", "name": "IFUAName", "autoWidth": true },
                     { "data": "RekeningNasabah", "name": "RekeningNasabah", "autoWidth": true },   //index 7
                     { "data": "IFUA", "name": "IFUA", "autoWidth": true },   //index 7
                     { "data": "NamaNasabah", "name": "NamaNasabah", "autoWidth": true },   //index 8
                     { "data": "Bank", "name": "Bank", "autoWidth": true },   //index 8
                     { "data": "Nominal", "name": "Nominal", "autoWidth": true, "render": $.fn.dataTable.render.number('.', '', 0, '') },   //index 9
+                    { "data": "SARefrence", "name": "SARefrence", "autoWidth": true },   //index 10
                     { "data": "KeteranganRetur", "name": "KeteranganRetur", "autoWidth": true },   //index 8
                     {
                         "data": "MatchingNama", "name": "MatchingNama", "autoWidth": true,
@@ -337,6 +350,8 @@
 
     function Save() {
         var data = new Object();
+        data.SARefrence = $('#SARefrence').val();
+        data.IFUAName = $('#IFUAName').val();
         data.TransDate = $('#TglTransaksi').val();
         data.NoRekening = $('#NomorRekening').val();
         data.NamaReksadana = $('#NamaReksadana').val();
@@ -351,6 +366,7 @@
         data.IFUA = $('#IFUACode').val();
         data.PaymentDate = $('#PaymentDate').val();
         data.NoJurnal = $('#NoJurnal').val();
+        console.log(data);
         $.ajax({
             url: "@Url.Action("Save", "Returs")",
             type: 'POST',
