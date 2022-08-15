@@ -28,17 +28,17 @@ namespace ReksadanaRekon.Controllers.Transactions
             return View();
         }
 
-        public ActionResult GetList()
+        public ActionResult GetList()   
         {
             var result = _context.DataRetur
                     .Include("Matching")
                     .Include("SA")
                     .Include("MI")
                     .Include("Fund")
-                    .Where(x => x.MatchingId == 1).Select(x => new { Id = x.Id, TransDate = x.TransDate, SA = x.SA.Nama, Fund = x.Fund.Nama, MI = x.MI.Nama, NoRekening = x.NoRekening, RekeningNasabah = x.RekeningNasabah, NamaNasabah = x.NamaNasabah, Bank = x.NamaBank, Nominal = x.Nominal, KeteranganRetur = x.KeteranganRetur, IFUA = x.IFUA, PaymentDate = x.PaymentDate, NoJurnal = x.NoJurnal, MatchingNama = x.Matching.Nama, MatchingWarna = x.Matching.Warna }).OrderByDescending(x => x.Id).ToList();
+                    .Where(x => x.MatchingId == 1).Select(x => new { SARefrence = x.SARefrence, IFUAName = x.IFUAName, Id = x.Id, TransDate = x.TransDate, SA = x.SA.Nama, Fund = x.Fund.Nama, MI = x.MI.Nama, NoRekening = x.NoRekening, RekeningNasabah = x.RekeningNasabah, NamaNasabah = x.NamaNasabah, Bank = x.NamaBank, Nominal = x.Nominal, KeteranganRetur = x.KeteranganRetur, IFUA = x.IFUA, PaymentDate = x.PaymentDate, NoJurnal = x.NoJurnal, MatchingNama = x.Matching.Nama, MatchingWarna = x.Matching.Warna }).OrderByDescending(x => x.Id).ToList();
 
             return Json(new { data = result }, JsonRequestBehavior.AllowGet);
-        }
+        } 
 
         public JsonResult GetById(int id)
         {
@@ -117,6 +117,8 @@ namespace ReksadanaRekon.Controllers.Transactions
             else
             {
                 var retur = _context.DataRetur.Single(m => m.Id == data.Id);
+                retur.IFUAName = data.IFUAName;
+                retur.SARefrence = data.SARefrence;
                 retur.TransDate = data.TransDate;
                 retur.NoRekening = data.NoRekening;               
                 retur.RekeningNasabah = data.RekeningNasabah;
@@ -203,27 +205,29 @@ namespace ReksadanaRekon.Controllers.Transactions
                                         {
                                             int SAId = 0, FundId = 0, MIId = 0;
 
-                                            string FundName = ((_excel.Range)range.Cells[row, 4]).Text;
-                                            string SAName = ((_excel.Range)range.Cells[row, 6]).Text;
-                                            string MIName = ((_excel.Range)range.Cells[row, 12]).Text;
+                                            string IFUAName = ((_excel.Range)range.Cells[row, 2]).Text;
+                                            string FundName = ((_excel.Range)range.Cells[row, 5]).Text;
+                                            string SAName = ((_excel.Range)range.Cells[row, 7]).Text;
+                                            string MIName = ((_excel.Range)range.Cells[row, 13]).Text;
 
                                             if (FundName == "" || SAName == "" || MIName == "")
                                                 continue;
 
-                                            string ReksadanaNo = ((_excel.Range)range.Cells[row, 3]).Text;
-                                            string JurnalNo = ((_excel.Range)range.Cells[row, 5]).Text;
-                                            string IFUA = ((_excel.Range)range.Cells[row, 7]).Text;
-                                            string InvestorName = ((_excel.Range)range.Cells[row, 8]).Text;
-                                            string InvestorAcc = ((_excel.Range)range.Cells[row, 9]).Text;
-                                            string Bank = ((_excel.Range)range.Cells[row, 10]).Text;
-                                            double Nominal = ((_excel.Range)range.Cells[row, 11]).Value2;
-                                            string Keterangan = ((_excel.Range)range.Cells[row, 14]).Text;
+                                            string ReksadanaNo = ((_excel.Range)range.Cells[row, 4]).Text;
+                                            string JurnalNo = ((_excel.Range)range.Cells[row, 6]).Text;
+                                            string IFUA = ((_excel.Range)range.Cells[row, 8]).Text;
+                                            string InvestorName = ((_excel.Range)range.Cells[row, 9]).Text;
+                                            string InvestorAcc = ((_excel.Range)range.Cells[row, 10]).Text;
+                                            string Bank = ((_excel.Range)range.Cells[row, 11]).Text;
+                                            double Nominal = ((_excel.Range)range.Cells[row, 12]).Value2;
+                                            string Keterangan = ((_excel.Range)range.Cells[row, 15]).Text;
+                                            string SARefrence = ((_excel.Range)range.Cells[row, 16]).Text;
 
                                             //DateTime TransDate = DateTime.ParseExact(((_excel.Range)range.Cells[row, 2]).Text, "d/MM/yyyy", CultureInfo.InvariantCulture);
                                             //DateTime PaymentDate = DateTime.ParseExact(((_excel.Range)range.Cells[row, 13]).Text, "d/MM/yyyy", CultureInfo.InvariantCulture);
 
-                                            DateTime TransDate = DateTime.ParseExact(((_excel.Range)range.Cells[row, 2]).Text, "yyyyMMd", CultureInfo.InvariantCulture);
-                                            DateTime PaymentDate = DateTime.ParseExact(((_excel.Range)range.Cells[row, 13]).Text, "yyyyMMd", CultureInfo.InvariantCulture);
+                                            DateTime TransDate = DateTime.ParseExact(((_excel.Range)range.Cells[row, 3]).Text, "yyyyMMd", CultureInfo.InvariantCulture);
+                                            DateTime PaymentDate = DateTime.ParseExact(((_excel.Range)range.Cells[row, 14]).Text, "yyyyMMd", CultureInfo.InvariantCulture);
 
                                             #region GetBankId
                                             //var BankId = _con.QueryFirstOrDefault<int>("SELECT Id FROM Banks WHERE Nama = @Bank", new { Bank });
@@ -287,8 +291,8 @@ namespace ReksadanaRekon.Controllers.Transactions
                                                 bool IsDelete = false;
 
 
-                                                string sql = "INSERT INTO DataReturs (TransDate, NoRekening, IFUA, NamaNasabah, Nominal, MatchingId, SAId, FundId, MIId, NamaBank, RekeningNasabah, KeteranganRetur, PaymentDate, CreateDate, UserId, IsDelete) VALUES (@TransDate, @NoRekening, @IFUA, @NamaNasabah, @Nominal, @MatchingId, @SAId, @FundId, @MIId, @NamaBank, @RekeningNasabah, @KeteranganRetur, @PaymentDate, @CreateDate, @UserId, @IsDelete)";
-                                                _con.Execute(sql, new { TransDate = TransDate, NoRekening = ReksadanaNo, IFUA = IFUA, NamaNasabah = InvestorName, Nominal, MatchingId, SAId, FundId, MIId, NamaBank = Bank, RekeningNasabah = InvestorAcc, KeteranganRetur = Keterangan, PaymentDate = PaymentDate, CreateDate, UserId, IsDelete });
+                                                string sql = "INSERT INTO DataReturs (IFUAName, SARefrence, TransDate, NoRekening, IFUA, NamaNasabah, Nominal, MatchingId, SAId, FundId, MIId, NamaBank, RekeningNasabah, KeteranganRetur, PaymentDate, CreateDate, UserId, IsDelete) VALUES (@IFUAName, @SARefrence, @TransDate, @NoRekening, @IFUA, @NamaNasabah, @Nominal, @MatchingId, @SAId, @FundId, @MIId, @NamaBank, @RekeningNasabah, @KeteranganRetur, @PaymentDate, @CreateDate, @UserId, @IsDelete)";
+                                                _con.Execute(sql, new { IFUAName = IFUAName, SARefrence = SARefrence, TransDate = TransDate, NoRekening = ReksadanaNo, IFUA = IFUA, NamaNasabah = InvestorName, Nominal, MatchingId, SAId, FundId, MIId, NamaBank = Bank, RekeningNasabah = InvestorAcc, KeteranganRetur = Keterangan, PaymentDate = PaymentDate, CreateDate, UserId, IsDelete });
                                                 csuccess++;
                                             }
                                             else

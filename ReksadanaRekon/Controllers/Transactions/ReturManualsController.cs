@@ -12,7 +12,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ReksadanaRekon.Controllers.Transactions 
+namespace ReksadanaRekon.Controllers.Transactions  
 {
     public class ReturManualsController : Controller
     {
@@ -261,7 +261,22 @@ namespace ReksadanaRekon.Controllers.Transactions
             ws.Cells.AutoFitColumns();
             DataTable dt = new DataTable(); // Read records from database here
             //DataColumn[] cols = { new DataColumn("No"),new DataColumn("INPUT DATE"), new DataColumn("TRANSACTION DATE"), new DataColumn("SA Name"), new DataColumn("Fund Name"), new DataColumn("MI Name"), new DataColumn("A/C Name"), new DataColumn("Rek Name"), new DataColumn("Bank Name"), new DataColumn("Amount"), new DataColumn("Status"), new DataColumn("Keterangan"), new DataColumn("No. Jurnal"), new DataColumn("IFUA") };
-            DataColumn[] cols = { new DataColumn("No"),new DataColumn("INPUT DATE"), new DataColumn("TRANSACTION DATE"), new DataColumn("REKSA DANA A/C NO"), new DataColumn("FUND NAME"), new DataColumn("JOURNAL NO"), new DataColumn("SA Name"), new DataColumn("IFUA"), new DataColumn("INVESTOR NAME"), new DataColumn("INVESTOR A/C NO"), new DataColumn("BANK NAME"), new DataColumn("NOMINAL"), new DataColumn("MI Name"), new DataColumn("PAYMENT DATE"), new DataColumn("Keterangan") };
+            DataColumn[] cols = { new DataColumn("No"),new DataColumn("INPUT DATE"),
+                new DataColumn("TRANSACTION DATE"),
+                new DataColumn("REKSA DANA A/C NO"),
+                new DataColumn("FUND NAME"),
+                new DataColumn("JOURNAL NO"),
+                new DataColumn("SA Name"),
+                new DataColumn("IFUA Name"),
+                new DataColumn("IFUA"),
+                new DataColumn("INVESTOR NAME"),
+                new DataColumn("INVESTOR A/C NO"),
+                new DataColumn("BANK NAME"),
+                new DataColumn("NOMINAL"),
+                new DataColumn("MI Name"),
+                new DataColumn("PAYMENT DATE"),
+                new DataColumn("Keterangan"),
+                new DataColumn("SA Refrence") };
             dt.Columns.AddRange(cols);
 
             var dataApp = _context.DataRetur.Include("SA").Include("Fund").Include("MI").Include("Matching").Where(x => x.MatchingId == 1).OrderByDescending(x => x.CreateDate).ToList();
@@ -276,14 +291,16 @@ namespace ReksadanaRekon.Controllers.Transactions
                 row[4] = data.Fund.Nama;
                 row[5] = data.NoJurnal;
                 row[6] = data.SA.Nama;
-                row[7] = data.IFUA;
-                row[8] = data.NamaNasabah;
-                row[9] = data.RekeningNasabah;
-                row[10] = data.NamaBank;
-                row[11] = data.Nominal;
-                row[12] = data.MI.Nama;
-                row[13] = data.PaymentDate.ToShortDateString();
-                row[14] = data.KeteranganRetur;
+                row[7] = data.IFUAName;
+                row[8] = data.IFUA;
+                row[9] = data.NamaNasabah;
+                row[10] = data.RekeningNasabah;
+                row[11] = data.NamaBank;
+                row[12] = data.Nominal;
+                row[13] = data.MI.Nama;
+                row[14] = data.PaymentDate.ToShortDateString();
+                row[15] = data.KeteranganRetur;
+                row[16] = data.SARefrence;
 
                 //row[3] = data.SA.Nama;
                 //row[4] = data.Fund.Nama;
