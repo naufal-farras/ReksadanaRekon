@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>D:\Aplikasi-BNI\RENA\Deploy\REKON 2022</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\Aplikasi-BNI\RENA\Deploy\REKON 2022 new</_PublishTargetUrl>
     <History>True|2021-09-29T15:35:28.8441485Z;True|2021-09-01T16:46:04.4329143+07:00;True|2021-07-15T11:09:40.1246598+07:00;True|2021-07-14T15:26:09.1295659+07:00;True|2021-07-14T10:54:36.0095035+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
@@ -84,10 +84,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/27/2012 13:00:52</publishTime>
     </File>
     <File Include="bin/ReksadanaRekon.dll">
-      <publishTime>01/12/2022 16:32:34</publishTime>
+      <publishTime>08/11/2022 16:45:24</publishTime>
     </File>
     <File Include="bin/ReksadanaRekon.pdb">
-      <publishTime>01/12/2022 16:32:34</publishTime>
+      <publishTime>08/11/2022 16:45:24</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/18/2015 20:19:46</publishTime>
@@ -1443,7 +1443,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/14/2021 17:43:34</publishTime>
     </File>
     <File Include="Views/Returs/Index.cshtml">
-      <publishTime>07/14/2021 17:26:50</publishTime>
+      <publishTime>08/08/2022 15:25:50</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>01/15/2020 17:43:00</publishTime>
@@ -1461,7 +1461,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/07/2021 20:29:20</publishTime>
     </File>
     <File Include="Views/Uploads/Index.cshtml">
-      <publishTime>01/11/2022 13:53:37</publishTime>
+      <publishTime>01/14/2022 10:05:33</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>01/15/2020 17:42:36</publishTime>
@@ -1470,7 +1470,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/15/2020 17:42:36</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/03/2022 15:06:02</publishTime>
+      <publishTime>08/11/2022 16:45:30</publishTime>
     </File>
   </ItemGroup>
 </Project>

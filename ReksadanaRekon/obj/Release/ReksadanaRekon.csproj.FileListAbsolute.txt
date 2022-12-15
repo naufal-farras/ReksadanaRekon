@@ -591,3 +591,4 @@ D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Release\Reksa
 D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Release\ReksadanaRekon.csproj.GenerateResource.Cache
 D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Release\ReksadanaRekon.dll
 D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Release\ReksadanaRekon.pdb
+D:\Aplikasi-BNI\RENA\NEW RENA 2022\RENA BNI BSD\ReksadanaRekon\obj\Release\ReksadanaRekon.Migrations.UpdatedTableDataReturn.resources

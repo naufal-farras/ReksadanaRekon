@@ -174,7 +174,14 @@
                     {
                         "data": "Fund", "name": "Fund", "autoWidth": true,
                         "render": function (d) {
-                            return d.substr(11, d.length)
+                            if (d) {
+
+                                return d.substr(11, d.length)
+                            }
+                            else {
+                                return "-";
+
+                            }
                         }
                     },   //index 5
                     { "data": "MI", "name": "MI", "autoWidth": true },   //index 6

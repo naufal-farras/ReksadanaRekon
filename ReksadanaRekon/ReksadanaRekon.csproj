@@ -317,6 +317,10 @@
     <Compile Include="Migrations\202112071501588_AddPasifTable.Designer.cs">
       <DependentUpon>202112071501588_AddPasifTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208080703090_UpdatedTableDataReturn.cs" />
+    <Compile Include="Migrations\202208080703090_UpdatedTableDataReturn.Designer.cs">
+      <DependentUpon>202208080703090_UpdatedTableDataReturn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Core\BaseModal.cs" />
@@ -890,6 +894,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112071501588_AddPasifTable.resx">
       <DependentUpon>202112071501588_AddPasifTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208080703090_UpdatedTableDataReturn.resx">
+      <DependentUpon>202208080703090_UpdatedTableDataReturn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
