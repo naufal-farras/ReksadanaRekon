@@ -390,7 +390,7 @@ namespace ReksadanaRekon.Controllers.Transactions
                     }
                     #endregion
 
-                    //Rekon();
+                    Rekon();
                 }
 
                 return Json(new { ResultUpload = resultupload }, JsonRequestBehavior.AllowGet);
