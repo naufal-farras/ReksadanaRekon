@@ -60,7 +60,7 @@ namespace ReksadanaRekon.Controllers.Transactions
                                     file.SaveAs(path);
 
 
-                                    result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataFund @UserId", new { UserId = currentUser.Id }, null, 360);                                    
+                                    result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataFund @UserId", new { UserId = currentUser.Id }, null, 360);
                                 }
                                 catch (Exception ex)
                                 {
@@ -97,7 +97,7 @@ namespace ReksadanaRekon.Controllers.Transactions
                                     file.SaveAs(path);
 
 
-                                    result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataFundBNI @UserId,@NoRek,@NaRek", new { UserId = currentUser.Id , NoRek,NaRek }, null, 360);
+                                    result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataFundBNI @UserId,@NoRek,@NaRek", new { UserId = currentUser.Id, NoRek, NaRek }, null, 360);
                                 }
                                 catch (Exception ex)
                                 {
@@ -114,44 +114,199 @@ namespace ReksadanaRekon.Controllers.Transactions
 
                                 #endregion
                             }
-                            else if (category == 3 && file.FileName.EndsWith("csv"))
+                            else if (category == 3 && file.FileName.EndsWith("xls"))
                             {
-                                #region File Fund Mandiri
-                                var NaRek = file.FileName;
-                                char[] spearator = { ' ' };
-                                string[] strlist = NaRek.Split(spearator, StringSplitOptions.RemoveEmptyEntries);
-                                var NoRek = strlist[0];
+                                string path = Server.MapPath("~/Content/Files/DataFund.xls");
 
-                                string path = Server.MapPath("~/Content/Files/DataFund.csv");
+                                if (System.IO.File.Exists(path))
+                                {
+                                    System.IO.File.Delete(path);
+                                }
+
+                                file.SaveAs(path);
+
+                                _excel.Application application = new _excel.Application(); ;
+                                _excel.Workbooks workbooks = application.Workbooks;
+                                _excel.Workbook workbook = null;
+                                _excel.Worksheet worksheet = null;
+                                _excel.Range range = null;
+
+                                workbook = workbooks.Open(path);
+                                worksheet = workbook.ActiveSheet;
+                                range = worksheet.UsedRange;
 
                                 try
                                 {
-                                    if (System.IO.File.Exists(path))
+                                   
+                                    string judul = ((_excel.Range)range.Cells[12, 2]).Text;
+                                    string judul2 = ((_excel.Range)range.Cells[12, 5]).Text;
+                                    string judul3 = ((_excel.Range)range.Cells[12, 12]).Text;
+
+                                    judul = judul.Replace(" ", "").ToLower();
+                                    judul2 = judul2.Replace(" ", "").ToLower();
+                                    judul3 = judul3.Replace(" ", "").ToLower();
+
+                                    if (judul == "postingdate" && judul2 == "remark" && judul3 == "credit")
                                     {
-                                        System.IO.File.Delete(path);
+                                        #region FundMandiri
+                                        int csuccess = 0, cfails = 0;
+                                        var rek = file.FileName;
+                                        char[] spearator = { '_' };
+                                        string[] strlist = rek.Split(spearator, StringSplitOptions.RemoveEmptyEntries);
+                                        var NoRek = strlist[0];
+                                        int RekeningId = 0;
+
+                                        #region CheckMasterRekening
+                                        var resultRek = _con.QueryFirstOrDefault<Rekening>("SELECT Id FROM Rekenings WHERE Norek = @Norek", new { NoRek });
+
+                                        if (resultRek == null)
+                                        {
+                                            var RekId = _con.QuerySingle<int>("INSERT INTO Rekenings (NoRek, NamaRek, CreateDate, UserId) OUTPUT INSERTED.Id VALUES (@NoRek, @NamaRek, @DateNow, @UserId);", new { NoRek = NoRek, NamaRek = file.FileName, DateNow = DateTime.Now, UserId = currentUser.Id });
+
+                                            RekeningId = RekId;
+                                        }
+                                        else
+                                        {
+                                            RekeningId = resultRek.Id;
+                                        }
+                                        #endregion
+
+                                        for (int row = 13; row <= range.Rows.Count; row++)
+                                        {
+                                            var cekRow = ((_excel.Range)range.Cells[row, 2]).Value2;
+
+                                            if (cekRow != null)
+                                            {
+                                                string sld2 = ((_excel.Range)range.Cells[row, 12]).Text;
+                                                string sld3 = sld2.Replace(",", "").Replace(" ", "") ;
+                                                var sld4 = sld3.Split('.')[0];
+                                                Int64 Saldo = Convert.ToInt64(sld4);
+                                                string Keterangan = ((_excel.Range)range.Cells[row, 5]).Text;
+
+                                                #region Tanggal
+                                                DateTime TanggalFund = DateTime.Now;
+                                                var formatTanggal = ((_excel.Range)range.Cells[row, 2]).NumberFormat;
+                                                if (formatTanggal == "General")
+                                                {
+                                                    string tanggal2 = ((_excel.Range)range.Cells[row, 2]).Value;
+                                                    string[] tanggalSplit = tanggal2.Split('/');
+                                                    
+                                                    string tanggal = tanggalSplit[0] + "/"+ tanggalSplit[1]+ "/" + tanggalSplit[2].Remove(4);
+
+                                                    if (tanggalSplit[2].Remove(4).Length == 4)
+                                                    {
+                                                        TanggalFund = DateTime.ParseExact(tanggal, "d/MM/yyyy", CultureInfo.InvariantCulture);
+                                                    }
+                                                    else
+                                                    {
+                                                        TanggalFund = DateTime.ParseExact(tanggal, "d/MM/yy", CultureInfo.InvariantCulture);
+                                                    }
+                                                }
+                                                else if (formatTanggal == "m/d/yyyy")
+                                                {
+                                                    TanggalFund = ((_excel.Range)range.Cells[row, 2]).Value;
+                                                    int day = Convert.ToInt16(Convert.ToString(TanggalFund.Month));
+                                                    int month = Convert.ToInt16(Convert.ToString(TanggalFund.Day));
+                                                    int year = Convert.ToInt16(Convert.ToString(TanggalFund.Year));
+                                                    string tanggal = day + "/" + month + "/" + year;
+                                                    TanggalFund = DateTime.ParseExact(tanggal, "d/M/yyyy", CultureInfo.InvariantCulture);
+                                                }
+                                                #endregion
+
+                                                var check = _con.QueryFirst<int>("SELECT COUNT(Id) FROM DataFunds WHERE RekeningId = @RekeningId AND Jumlah = @Saldo AND Keterangan = @Keterangan AND Tanggal = @TanggalFund",
+                                                                    new { RekeningId, Saldo, Keterangan, TanggalFund });
+                                                if (check == 0)
+                                                {
+                                                    var Tanggal = TanggalFund;
+                                                    var CCY = "Rp";
+                                                    var KeteranganDua = Keterangan.Replace(" ", "").Replace(",", "").Replace(".", "").Replace("'", "").ToUpper();
+                                                    var CreateDate = DateTime.Now;
+                                                    var UserId = currentUser.Id;
+                                                    var MatchingId = 1;
+
+                                                    string sql = "INSERT INTO DataFunds (RekeningId, CCY, Tanggal, Keterangan, KeteranganDua, Jumlah, Saldo, CreateDate, UserId, MatchingId) VALUES (@RekeningId, @CCY, @Tanggal, @Keterangan, @KeteranganDua, @Jumlah, @Saldo, @CreateDate, @UserId, @MatchingId)";
+                                                    _con.Execute(sql, new { RekeningId, CCY, Tanggal, Keterangan, KeteranganDua, Jumlah = Saldo, Saldo, CreateDate, UserId, MatchingId }); //Nilai Jumlah == Saldo
+
+                                                    csuccess++;
+                                                }
+                                                else
+                                                {
+                                                    cfails++;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                continue;
+                                            }
+                                        }
+
+                                        resultupload.Add(new ResultUpload() { namafile = file.FileName, status = "Success", warna = "success", success = csuccess, fails = cfails });
+                                        #endregion
+                                    }
+                                    else
+                                    {
+                                        resultupload.Add(new ResultUpload() { namafile = file.FileName, status = "Fails", warna = "danger", success = 0, fails = 0 });
                                     }
 
-                                    file.SaveAs(path);
-
-
-                                    result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataFundMANDIRI @UserId,@NoRek,@NaRek", new { UserId = currentUser.Id, NoRek, NaRek }, null, 360);
                                 }
                                 catch (Exception ex)
                                 {
+
                                     return new HttpStatusCodeResult(500, ex.Message);
 
                                 }
                                 finally
                                 {
+                                    workbooks.Close();
+                                    application.Quit();
                                     System.IO.File.Delete(path);
 
                                     GC.Collect();
                                     GC.WaitForPendingFinalizers();
                                 }
 
-                                #endregion
                             }
-                            else if (category == 4  && file.FileName.EndsWith("csv"))
+                            #region MANDIRI SP
+
+                            //else if (category == 3 && file.FileName.EndsWith("xls"))
+                            //{
+                            //    #region File Fund Mandiri
+                            //    var NaRek = file.FileName;
+                            //    char[] spearator = { '_' };
+                            //    string[] strlist = NaRek.Split(spearator, StringSplitOptions.RemoveEmptyEntries);
+                            //    var NoRek = strlist[0];
+
+                            //        string path = Server.MapPath("~/Content/Files/DataFund.xls");
+
+                            //    try
+                            //    {
+                            //        if (System.IO.File.Exists(path))
+                            //        {
+                            //            System.IO.File.Delete(path);
+                            //        }
+
+                            //        file.SaveAs(path);
+
+
+                            //        result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataFundMANDIRI @UserId,@NoRek,@NaRek", new { UserId = currentUser.Id, NoRek, NaRek }, null, 360);
+                            //    }
+                            //    catch (Exception ex)
+                            //    {
+                            //        return new HttpStatusCodeResult(500, ex.Message);
+
+                            //    }
+                            //    finally
+                            //    {
+                            //        System.IO.File.Delete(path);
+
+                            //        GC.Collect();
+                            //        GC.WaitForPendingFinalizers();
+                            //    }
+
+                            //    #endregion
+                            //}
+                            #endregion
+                            else if (category == 4 && file.FileName.EndsWith("csv"))
                             {
                                 #region File Fund OCBC
 
@@ -176,9 +331,9 @@ namespace ReksadanaRekon.Controllers.Transactions
                                     }
 
                                     file.SaveAs(path);
-                                                                        
+
                                     result = _con.QueryFirst<DataBalikVM>("EXEC SP_InsertDataAplikasi @UserId", new { UserId = currentUser.Id }, null, 360);
-                                  
+
 
                                 }
                                 catch (Exception ex)
@@ -196,7 +351,10 @@ namespace ReksadanaRekon.Controllers.Transactions
                                 #endregion
 
                             }
-                        }                        
+                        }
+
+                        if (category != 3)
+                        {
 
                         if (result.DBAwal != result.DBAkhir)
                         {
@@ -222,9 +380,13 @@ namespace ReksadanaRekon.Controllers.Transactions
                             else
                             {
                                 resultupload.Add(new ResultUpload() { namafile = file.FileName, status = "Fails Fund", warna = "danger", success = result.Success, fails = result.Fails });
-                            }                            
+                            }
                             #endregion
                         }
+                        
+                        }
+                        
+
                     }
                     #endregion
 
@@ -262,7 +424,7 @@ namespace ReksadanaRekon.Controllers.Transactions
                                 _excel.Workbook workbook = null;
                                 _excel.Worksheet worksheet = null;
                                 _excel.Range range = null;
-                                string  path = Server.MapPath("~/Content/Files/" + file.FileName);
+                                string path = Server.MapPath("~/Content/Files/" + file.FileName);
 
                                 try
                                 {
@@ -1163,11 +1325,12 @@ namespace ReksadanaRekon.Controllers.Transactions
                 return RedirectToAction("Login", "Account");
             }
         }
+
         public void Rekon()
         {
             var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
             var currentUser = manager.FindById(User.Identity.GetUserId());
-            
+
             #region Rekons SAReference
             var getAplikasi = _con.Query<DataAplikasi>("SELECT Id, SAReference, SAId, FundId, MIId, AmountNominal FROM DataAplikasis WHERE MatchingId = @MatchingId", new { MatchingId = 1 });
 

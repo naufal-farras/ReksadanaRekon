@@ -167,7 +167,7 @@
                 "url": "@Url.Action("GetList", "ApvRedMatchs")",
                 "type": "POST",
                 "datatype": "json"
-            },
+            }, 
             "columns": [
                 { "data": "TransaksiId", "name": "TransaksiId" }, //index 0
                 { "data": "TanggalUpload", "name": "TanggalUpload", "render": function (d) { return moment(d).format('DD/MM/YY') } }, //index 1
@@ -185,7 +185,15 @@
                 {
                     "data": "Fund", "name": "Fund",
                     "render": function (d) {
+                        if (d) {
+
                         return d.substr(11, d.length)
+                        }
+                        else
+                        {
+                            return "-";
+
+                        }
                     }
                 },   //index 5
                 { "data": "MI", "name": "MI" },   //index 6

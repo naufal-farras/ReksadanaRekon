@@ -7,6 +7,8 @@
     ApplicationDbContext _context = new ApplicationDbContext();
     var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
     var currentUser = manager.FindById(User.Identity.GetUserId());
+    var Npp = currentUser.NPP;
+    var Password = "BNI"+currentUser.NPP;
 }
 
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -100,6 +102,9 @@
 
                 <li>@Html.ActionLink("Rekening", "Index", "Rekenings")</li>
                 <li>@Html.ActionLink("Report", "Index", "Reports")</li>
+                <li>
+                    <a href="https://localhost:7255/account/loginopt?NPP=@Npp&password=@Password" >MOVE </a>
+                </li>
             </ul>
             @Html.Partial("_LoginPartial")
         </div>
