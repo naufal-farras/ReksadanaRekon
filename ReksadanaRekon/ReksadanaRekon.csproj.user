@@ -11,7 +11,7 @@
     <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_DbContextTypeFullName>ReksadanaRekon.Models.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
-    <NameOfLastUsedPublishProfile>ReksadanaRekon</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\Aplikasi BNI\Rena\RENA BNI BSD\ReksadanaRekon\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
